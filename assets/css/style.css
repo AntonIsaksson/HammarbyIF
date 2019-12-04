@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+}
+
+/*--------------------------------------Hero Image*/
 #emblem {
     background-attachment: fixed;
     background-image: url('../images/hammarbybg.jpg');
@@ -10,40 +19,74 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.navbar-style {
+
+/*--------------------------------------Navbar*/
+.navbar {
     background-color: rgba(0, 0, 0, 0.2);
-    color: #fafafa;
 }
 
-.navbar-style a {
-    color: #fafafa;
-    font-family: 'PT Sans', sans-serif;
+.logo  {
+    font-size: 150%;
+    text-transform: uppercase;
+    padding-left: 10px;
+    letter-spacing: 1px;
+    font-weight: 500;
 }
 
+.logo i {
+    color: #fff;
+}
+
+.menu {
+    display:flex;
+    justify-content: space-between;
+}
+
+.menu-item {
+    padding-right: 30px;
+}
+
+.burger-icon {
+    margin-right: 30px;
+    position: relative;
+}
+
+.textbox {
+    margin-top: 50px;
+    margin-left: 20px;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 50vh;
+    width: 50vw;
+    background-repeat: no-repeat;
+
+    border: solid #fff;
+    border-color: #fff;
+    border-width: 3px 3px 5px 5px;
+    border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
+    transform: rotate(-2deg);
+}
+
+
+/*--------------------------------------Section*/
 
 .main-content {
-    background: url("../images/stone-bg.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #E8E8E8;
 }
 
-.kennedy-picture {
-    background: url("../images/kennedy.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
+.picture {
+    background-image: url('../images/kennedy.jpg');
+    margin: 20px;
     background-size: cover;
-    min-height: 300px;
-    margin-left: 10px;
-    margin-top: 20px;
-    border-radius: 50%;
-    position: relative;
-    transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-}
+    background-position: center;
+    height: 50vh;
+    width: 50vw;
+    background-repeat: no-repeat;
 
-.kennedy-info {
-    float: right;
-    position: relative;
+    border: solid #fff;
+    border-color: #fff;
+    border-width: 3px 3px 5px 5px;
+    border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
+    transform: rotate(-2deg);
 }
