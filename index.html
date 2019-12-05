@@ -16,10 +16,10 @@
 </head>
 <body>
 
-    <header class="jumbotron" id="emblem">
-        
+
+        <header>
             <nav class="fixed-top nav navbar navbar-expand-sm navbar-dark">
-                <a href="index.html" class="logo navbar-brand d-none d-sm-block"><i class="fas fa-futbol"></i>Hammarby IF</a>
+                <a href="index.html" class="logotext navbar-brand d-none d-sm-block">Hammarby IF</a>
                 
                 <button class="navbar-toggler burger-icon ml-auto" data-toggle="collapse" data-target="#menuCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -34,27 +34,104 @@
                     </ul>
                 </div>
             </nav>
-
-    </header>
+        </header>
+    
+    <div class="jumbotron" id="emblem">
         
         <section class="container-fluid">
             <div class="main-content row">
                 <div class="picture col-md-4">
                 </div>
                 <div class="info col-md-6">
-                    
+                    <h2 class="info-heading">Kennedy Bakircioglü - Club Legend</h2>
+                    <p class="info-p">
+                        Kennedy Bakircioglu, då 19, kom först till Hammarby som jättetalang från Assyriska FF 
+                        inför 1999 års säsong - Bajen vann här en dragkamp med flertalet andra klubbar inblandade
+                         om grabben med teknik och spelsinne utöver det vanliga. Efter fem fantastiska säsonger i den 
+                         grönvita tröjan och en huvudroll då Bajen tog SM-guld, hamnade Kennedy i grekiska Iraklis. 
+                         Ett år efter flytten röstades mittfältaren fram till den fjärde störste Bajenprofilen genom tiderna. 
+                         Det blev bara en säsong i Grekland, men lite längre sejourer i holländska Twente samt Ajax, 
+                         och nordspanska Racing Santander. Det var också i Holland som han samlade på sig 14 landskamper för Sverige.
+                    </p>
                 </div>
             </div>
         </section>
 
-        
-        
-        
+        <footer class="fixed-bottom container-fluid">         <!--"container-fluid"= width: 100% at all breakpoints-->
+            <div id="footer-details" class="row">
+                <!--About-->
+                <div class="col-sm-4">
+                    <h5 class="uppercase general-sub">About</h5>
+                </div>
+                <!--/About-->
+                
+                <!--Download CV-->
+                <div class="col-sm-4">
+                    <h5 class="uppercase general-sub">Download</h5>
+                    
+                        <a href="assets/cv/CV.pdf" target="_blank" class="cv-pdf">                    <!--link to CV-pd-->
+                            <i class="fa fa-download" aria-hidden="true"></i>
+                            <span class="sr-only">Download link.</span>                <!--"sr-only"=screen readers only (won't be seen by regular users)-->
+                        </a>
+                </div>
+                <!--/Download CV-->
+                
+                <!--Social Links-->
+                <div class="col-sm-4">
+                    <h5 class="uppercase general-sub">Social</h5>
+                    <!--list of social links-->
+                    <ul class="list-inline social-links">
+                        <!--facebook-->
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                <span class="sr-only">Facebook</span>
+                            </a>
+                        </li>
+                        <!--twitter-->
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                <span class="sr-only">Twitter</span>
+                            </a>
+                        </li>
+                        <!--linkedin-->
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                <span class="sr-only">LinkedIn</span>
+                            </a>
+                        </li>
+                        <!--pinterest-->
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa fa-pinterest" aria-hidden="true"></i>
+                                <span class="sr-only">Pinterest</span>
+                            </a>
+                        </li>
+                        <!--instagram-->
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                <span class="sr-only">Instagram</span>
+                            </a>
+                        </li>
+                        <!--youtube-->
+                        <li class="list-inline-item">
+                            <a target="_blank" href="#">
+                                <i class="fa fa-youtube" aria-hidden="true"></i>
+                                <span class="sr-only">Youtube</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!--/list of social links-->
+                </div>
+                <!--/Social Links-->
+            </div>
+        </footer>
 
-
-    <section class="main-content container-fluid no-gutters">
-
-    </section>
+    </div>
+    
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

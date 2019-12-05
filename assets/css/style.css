@@ -22,11 +22,11 @@ body {
 
 /*--------------------------------------Navbar*/
 .navbar {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(85, 168, 102, 0.8);
     border-bottom: 3px solid #E8E8E8;
 }
 
-.logo  {
+.logotext  {
     font-size: 150%;
     text-transform: uppercase;
     padding-left: 10px;
@@ -48,10 +48,17 @@ body {
     margin-left: 20px;
     margin-right: 20px;
     border-bottom: 3px solid transparent;
+    font-weight: 400;
 }
 
 .menu-item:hover {
-  border-bottom: 1px solid #E8E8E8;
+    border-bottom: 1px solid #E7C61C;
+}
+
+.menu:active {
+    border-bottom: 1px solid #E7C61C;
+}
+
 }
 
 .burger-icon {
@@ -65,21 +72,94 @@ body {
 /*--------------------------------------Section*/
 
 .main-content {
-    background-color: #E8E8E8;
+    /*background-color: rgba(32, 148, 54, 0.8);
+    box-shadow: 0 0 5px 10px rgba(32, 148, 54, 0.8);*/
+    background-color: rgba(22, 80, 28, 0.8);
+    box-shadow: 0 0 5px 10px rgba(22, 80, 28, 0.8);
+    margin-top: 60px;
+    margin-bottom: 20px;
 }
 
 .picture {
     background-image: url('../images/kennedy2-min.jpg');
-    margin: 20px;
+    margin: 20px 20px 20px 50px;;
     background-size: cover;
     background-position: center;
-    height: 50vh;
-    width: 50vw;
+    height: 40vh;
+    width: 40vw;
     background-repeat: no-repeat;
 
-    border: solid #fff;
-    border-color: #fff;
-    border-width: 3px 3px 5px 5px;
+    border: solid #fafafa;
+    border-color: #fafafa;
+    border-width: 2px 2px 4px 4px;
     border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
     transform: rotate(-2deg);
+}
+
+.info {
+    margin-left: 30px;
+}
+
+.info-heading{
+    color:  #fafafa;
+    font-size: 35px;
+    margin-top: 20px;
+}
+
+.info-p {
+    color:  #fafafa;
+}
+
+
+/*--------------------------------------Footer*/
+
+footer {
+    /*background-color: rgba(152, 152, 152, 1)*/
+    background-color: rgba(22, 80, 28, 1);
+    color: #fafafa;
+    max-height: 100px;
+    margin: 0;
+}
+
+#footer-details {               /*<--targets the whole footer*/
+    padding: 20px;
+}
+
+.cv-pdf i {                     /*<--targeting the 'download pdf' icon*/
+    font-size: 18px;
+    color: #fafafa;
+    text-align: center;
+    padding-left: 5px;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.cv-pdf i:hover {               /*<--targeting the 'download pdf' icon (hover combined with transition)*/
+    color: #E7C61C;
+}
+
+.social-links {
+    padding-bottom: 15px;
+}
+
+.social-links li a i {          /*<--targeting the 'social' icons*/
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;         /*<--makes the icons into circles (only works when width & height=same(square))*/
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: #8f8f8f;
+    transition: all 0.35s ease-in-out;          /*<--same transition as ".cv-pdf i"*/
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {       /*<--targeting the 'social' icons (hover combined with transition)*/
+    background: #E7C61C;
 }
